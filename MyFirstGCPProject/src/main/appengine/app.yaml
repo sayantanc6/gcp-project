@@ -1,0 +1,24 @@
+runtime: java
+env: flex
+
+runtime_config:
+  jdk: openjdk8
+env_variables:
+  SPRING_PROFILES_ACTIVE: "gcp"
+
+handlers:
+- url: /.*
+  script: this field is required, but ignored
+
+automatic_scaling:
+  min_num_instances: 1
+  max_num_instances: 5
+  
+resources:
+  cpu: 2
+  memory_gb: 2.3
+  disk_size_gb: 10
+  volumes:
+  - name: ramdisk1
+    volume_type: tmpfs
+    size_gb: 0.5 
