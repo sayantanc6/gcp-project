@@ -27,7 +27,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
    
 @SpringBootApplication
 public class MyFirstGcpProjectApplication extends SpringBootServletInitializer{
-  
+   
 	public static void main(String[] args) {
 		SpringApplication.run(MyFirstGcpProjectApplication.class, args);
 	}
