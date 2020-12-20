@@ -1,6 +1,6 @@
 runtime: java
 env: flex
-
+ 
 runtime_config:
   jdk: openjdk8
 env_variables:
@@ -8,7 +8,7 @@ env_variables:
 
 handlers:
 - url: /.*
-  script: this field is required, but ignored
+  script: mysql “host=10.128.0.11 port=3307 sslmode=disable user=root”
 
 automatic_scaling:
   min_num_instances: 1
